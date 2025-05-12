@@ -2,9 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+Make sure the following are installed:
+
+- **Node.js** (v14 or higher)
+- **npm** (comes with Node.js)
+- **Git** (optional for cloning)
+
+---
+
+### 📦 Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/wordle-clone.git
+cd wordle-clone
+
+In the project directory (wordle-clone), you can run:
 
 ### `npm install`
 
