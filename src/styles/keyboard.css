@@ -1,0 +1,56 @@
+.keyboard {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.key-button:active {
+  background-color: #bbb;
+}
+
+.key-pressed {
+  background-color: #bbb;
+  transition: background-color 0.1s ease;
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    background-color: #bbb;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #bbb;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #eee;
+  }
+}
+
+.key-button {
+  padding: 10px 14px;
+  margin: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #eee;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 4s ease;
+  color: #222;
+}
+
+.key-animate {
+  animation: flash 0.2s ease-out;
+}
+
+.backspace-icon {
+  width: 20px;
+  height: 20px;
+  color: #222;
+}
