@@ -5,7 +5,7 @@ import { ReactComponent as BackspaceIcon } from "../assets/BackspaceIcon.svg";
 const Keyboard = ({ onKeyPress, pressedKey, keyStatuses }) => {
   const keyRefs = useRef({});
 
-  //Used useMemo to prevent rows to re-create them on every render.
+  // Used useMemo to prevent rows to re-create them on every render.
   const rows = useMemo(
     () => [
       ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
@@ -25,7 +25,7 @@ const Keyboard = ({ onKeyPress, pressedKey, keyStatuses }) => {
     // Forcefully restart animation
     el.classList.remove("key-animate");
 
-    // Use requestAnimationFrame to ensure reflow is complete before re-adding
+    // Used requestAnimationFrame to ensure reflow is complete before re-adding
     requestAnimationFrame(() => {
       el.classList.add("key-animate");
 

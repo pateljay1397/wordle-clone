@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Board from "./components/Board";
 import Keyboard from "./components/Keyboard";
 import { validateWord } from "./utils/validateWord";
@@ -130,11 +130,7 @@ function App() {
   return (
     <div className="App">
       <h1>Wordle</h1>
-      <img
-        src="/logo192.png" // Replace this with the actual path to your Wordle logo
-        alt="Wordle Logo"
-        className="wordle-logo"
-      />
+      <img src="/logo192.png" alt="Wordle Logo" className="wordle-logo" />
       <Board
         guesses={guesses}
         currentGuess={currentGuess}
